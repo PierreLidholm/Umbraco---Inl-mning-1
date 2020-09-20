@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Products>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Core.PropertyEditors.ValueConverters;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+@{
+	var selection = Umbraco.Content(Guid.Parse("1cd666d4-614c-4ecf-ade9-fa271ef76780"))
+    .ChildrenOfType("productCard")
+    .Where(x => x.IsVisible());
+}
+
+
+
+<div class="container text-center">
+    <h1>@Model.Value("pageContentText")</h1>
+    <div class="row">
+        <div class="col">
+            <div class="card-deck">
+
+                @foreach (var products in selection)
+                {
+
+                var imgCropper = products.Value<ImageCropperValue>("productImage");
+                var thumbUrl = imgCropper.Src + imgCropper.GetCropUrl("Thumb");
+
+                <div class="card">
+                    <img class="card-img-top" src="@thumbUrl" alt="Card image cap">
+
+                    <div class="card-body">
+                        <h4 class="card-title"><a>@products.Name</a></h4>
+                        <p class="card-text">@products.Value("productsDescription")</p>
+                        <a href="#" class="btn btn-primary">Köp</a>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+
+@{
+	Layout = "Master.cshtml";
+}
+
+
+
+
+<div class="container text-center">
+    <p>@Model.Value("pageContentText")</p>
+</div>
+
+<!-- Senaste tweets -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            @Umbraco.RenderMacro("GetLatestsTweets", new {twitterHandle="stayhard_se"})
+        </div>
+    </div>
+    
+    
+</div>

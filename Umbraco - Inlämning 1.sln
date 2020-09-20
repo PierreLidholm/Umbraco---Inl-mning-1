@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco - Inlämning 1", "Umbraco - Inlämning 1\Umbraco - Inlämning 1.csproj", "{F9016969-36AB-4F23-9EE7-9F28BFF5B6F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PierreLidholm.Core", "PierreLidholm.Core\PierreLidholm.Core.csproj", "{78740889-634B-4B88-8C55-E01B0AE4C6ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9016969-36AB-4F23-9EE7-9F28BFF5B6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9016969-36AB-4F23-9EE7-9F28BFF5B6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9016969-36AB-4F23-9EE7-9F28BFF5B6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9016969-36AB-4F23-9EE7-9F28BFF5B6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78740889-634B-4B88-8C55-E01B0AE4C6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78740889-634B-4B88-8C55-E01B0AE4C6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78740889-634B-4B88-8C55-E01B0AE4C6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78740889-634B-4B88-8C55-E01B0AE4C6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95D6BEFC-0C21-4604-B36D-0AEFB01B3722}
+	EndGlobalSection
+EndGlobal
